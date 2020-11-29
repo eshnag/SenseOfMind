@@ -1,0 +1,262 @@
+html, body {
+  font-family: sans-serif;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  background-color:burlywood;
+
+}
+.header {
+  padding: 80px; /* some padding */
+  text-align: center; /* center the text */
+  color: white; /* white text color */
+
+}
+
+/* Increase the font size of the <h1> element */
+.header h1 {
+  font-size: 40px;
+    color: #5e554b;
+  text-align: center;
+
+}
+/*h1 {
+  font-size: 48px;
+  text-align: center;
+}*/
+
+p {
+  max-width: 65%;
+  min-width: 500px;
+}
+
+h2 {
+  text-align: center;
+  font-size: 2.6rem;
+}
+
+.container {
+  display: flex;
+}
+
+.main {
+  padding-left: 30px;
+  min-width: 75%;
+}
+
+
+
+/* Add a black background color to the top navigation */
+.icon {
+  display: inline-block;
+  cursor: pointer;
+
+}
+.topnav {
+ /* background-color: rgba(240, 229, 201, 0.479);*/
+  overflow: hidden;
+      text-transform: uppercase;
+
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: rgb(238, 166, 57);
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: rgb(238, 166, 57);
+  color: white;
+}
+*/
+/* Style the top navigation bar */
+.navbar {
+  overflow: hidden; /* Hide overflow */
+  background-color: #333; /* Dark background color */
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  float: left; /* Make sure that the links stay side-by-side */
+  display: block; /* Change the display to block, for responsive reasons (see below) */
+  color: white; /* White text color */
+  text-align: center; /* Center the text */
+  padding: 14px 20px; /* Add some padding */
+  text-decoration: none; /* Remove underline */
+}
+
+/* Right-aligned link */
+.navbar a.right {
+  float: right; /* Float a link to the right */
+}
+
+/* Change color on hover/mouse-over */
+.navbar a:hover {
+  background-color: #ddd; /* Grey background color */
+  color: black; /* Black text color */
+}
+#startbutton{
+ 
+  background-color: #5e554b; /* Green */
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+
+ display: inline-block;
+  font-size: 16px;
+}
+#startbutton:hover {background: rgb(207, 184, 149);}
+.options{
+  text-align:center;
+  float: center;
+}
+#slogan{
+  color: #5e554b;
+  text-align: center;
+}
+
+table {
+  height: 40%;
+  left: 10%;
+  margin: 20px auto;
+  overflow-y: scroll;
+  position: static;
+  width: 80%;
+}
+
+thead th {
+  background: rgb(207, 163, 131);
+  color: #FFF;
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  font-weight: 100;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+tr {
+  background: #f4f7f8;
+  border-bottom: 1px solid #FFF;
+  margin-bottom: 5px;
+}
+
+th, td {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  padding: 20px;
+  text-align: left;
+  width: 33.3333%;
+}
+
+.search {
+  background-color: #FFF;
+  border: 1px solid #DDD;
+  border-radius: 3px;
+  color: #AAA;
+  padding: 20px;
+  margin: 50px auto 0px auto;
+  width: 77%;
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  margin-top:10%;
+}
+#descriptions{
+  padding-top:10%;
+}
+
+/*img gallery*/
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.columnimg {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clear floats after image containers */
+.rowimg::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.rowimg {
+  display: flex;
+}
+
+.columnimg {
+  flex: 33.33%;
+  padding: 5px;
+    //display: flex;
+  
+}
+#backbutton{
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+background-color: rgb(189, 154, 134);
+}
+
+.plasticity{
+  height:40%;
+  width:40%;
+  margin-bottom: auto;
+}
+/* Parent Container */
+.content_img{
+ position: relative;
+ width: 50%;
+ height: 50%;
+ float: right;
+ margin-right: 20px;
+}
+
+/* Child Text Container */
+.content_img div{
+ position: absolute;
+ bottom: 0;
+ right: 0;
+ background: rgb(186, 171, 149);
+ color: white;
+ margin-bottom: 5px;
+ font-family: sans-serif;
+ opacity: 0;
+ visibility: hidden;
+ -webkit-transition: visibility 0s, opacity 0.5s linear; 
+ transition: visibility 0s, opacity 0.5s linear;
+}
+
+/* Hover on Parent Container */
+.content_img:hover{
+ cursor: pointer;
+}
+
+.content_img:hover div{
+ width: 150px;
+ padding: 8px 15px;
+ visibility: visible;
+ opacity: 0.7; 
+}
